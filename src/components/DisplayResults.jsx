@@ -20,11 +20,11 @@ const DisplayResults = ({ isFetching, error, article }) => {
         ) : (
           article.summary && (
             <div className="flex flex-col gap-3">
-              <h2 className="font-satoshi font-bold text-gray-600 text-xl">
+              <h2 className="font-satoshi font-bold dark:text-gray-200 text-gray-600 text-xl">
                 <span className="blue_gradient">Resumo</span> do Artigo
               </h2>
               <div className="summary_box">
-                <p className="font-inter font-medium text-sm text-gray-700">
+                <p className="font-inter font-medium text-sm dark:text-gray-100 text-gray-700">
                   { article.summary }
                 </p>
               </div>

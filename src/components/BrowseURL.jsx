@@ -1,4 +1,4 @@
-import { copy, tick, close } from '../assets';
+import { copy, tick, close, dark_copy, dark_close, dark_tick } from '../assets';
 
 const BrowseURL = ({ allArticles, setArticle, handleCopy, handleDelete, copied }) => {
   return (
@@ -13,10 +13,15 @@ const BrowseURL = ({ allArticles, setArticle, handleCopy, handleDelete, copied }
                 <img 
                   src={copied === item.url ? tick : copy} 
                   alt="copy_icon" 
-                  className="w-[40%] h-[40%] object-contain"
+                  className="w-[40%] h-[40%] object-contain dark:hidden"
+                />
+                <img 
+                  src={copied === item.url ? dark_tick : dark_copy} 
+                  alt="copy_icon" 
+                  className="w-[40%] h-[40%] object-contain hidden dark:block"
                 />
               </div>
-              <p className='flex-1 font-satoshi text-blue-700 font-medium text-sm truncate'>
+              <p className='flex-1 font-satoshi dark:text-blue-500 text-blue-700 font-medium text-sm truncate'>
                 {item.url}
               </p>
 
@@ -24,7 +29,12 @@ const BrowseURL = ({ allArticles, setArticle, handleCopy, handleDelete, copied }
                 <img 
                   src={ close } 
                   alt="copy_icon" 
-                  className="w-[40%] h-[40%] object-contain"
+                  className="w-[40%] h-[40%] object-contain dark:hidden"
+                />
+                <img 
+                  src={ dark_close } 
+                  alt="copy_icon" 
+                  className="w-[40%] h-[40%] object-contain hidden dark:block"
                 />
               </div>
             </div>

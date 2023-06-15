@@ -24,7 +24,7 @@ const Search = ({ handleSubmit, article, setArticle, articleLang, setArticleLang
       />      
       <select 
         value={ articleLang }
-        className="lang_btn peer-focus:border-gray-700 peer-focus:text-gray-700"
+        className="lang_btn"
         onChange={(e) => setArticleLang(e.target.value)}
       >
         {languages.map((lang) => (

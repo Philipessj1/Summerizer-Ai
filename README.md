@@ -12,6 +12,7 @@ Os usuários devem ser capazes de:
 - Ver o histórico de buscas.
 - Excluir Buscas do histórico
 - Copiar qualquer url já buscada.
+- Trocar temas entre claro e escuro
 
 ### Screenshots
 
